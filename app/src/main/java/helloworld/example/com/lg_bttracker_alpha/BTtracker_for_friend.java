@@ -266,7 +266,7 @@ public class BTtracker_for_friend extends Activity implements OnMapReadyCallback
         //마커 추가
         map.addMarker(new MarkerOptions()
                 .position(latest_location)
-                .snippet("Lat:" + location.getLatitude() + "Lng:" + location.getLongitude())
+                .snippet("Lat:" + latest_location.getLatitude() + "Lng:" + latest_location.getLongitude())
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 .title(mDeviceName));
     }
