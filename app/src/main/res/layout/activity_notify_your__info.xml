@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TableRow android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Address"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#395e9f"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/BTtracker_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="device address"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longtitude"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#395e9f" />
+
+        <TextView
+            android:id="@+id/BTtracker_Longtitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longtitude"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#395e9f" />
+
+        <TextView
+            android:id="@+id/BTtracker_Latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="20dp" />
+    </TableRow>
+</TableLayout>

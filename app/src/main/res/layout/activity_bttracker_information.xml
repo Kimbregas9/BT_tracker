@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Device Name"
+                android:textSize="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="#395e9f" />
+
+            <TextView
+                android:id="@+id/lastDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Date"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rssi"
+                android:textSize="15dp"
+                android:id="@+id/rssiRecord"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/lastLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Last Location"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/connectState"
+            android:background="@drawable/bt_off_icon" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="BLE tracker Info"
+        android:onClick="seekHelp"
+        android:background="@drawable/shape_round"
+        android:allowUndo="false"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
+</LinearLayout>

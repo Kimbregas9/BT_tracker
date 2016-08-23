@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAC address"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#395e9f" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="00:00:00:00:00:00"
+                android:id="@+id/MAC_address"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longtitude"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#395e9f" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="000.00000"
+                android:id="@+id/Longtitude"
+                android:singleLine="false"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#395e9f" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="000.00000"
+                android:id="@+id/Latitude"
+                android:gravity="right" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit"
+        android:background="@drawable/shape_round"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff" />
+</LinearLayout>
